@@ -1,2 +1,39 @@
-Welcome to phifix!
-==================
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="phifix.js"></script>
+</head>
+<body>
+
+<input id="prefix" type="text"></input>
+
+
+<span id="network_name">
+
+</span>
+
+<script type="text/javascript">
+	$(function(){
+		// attach on change
+		$("#prefix").keyup(function(e){
+
+			var network = phifix.find($("#prefix").val());
+
+			if (network==undefined){
+				$("#network_name").html('Not Found');
+			} else {
+				$("#network_name").html(network);
+			}
+			
+		
+			
+		});
+	});
+
+
+</script>
+
+</body>
+</html>
