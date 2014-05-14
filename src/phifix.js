@@ -1,5 +1,5 @@
 /*  phifix.js
-	small js library to identify phillinet mobile networks
+	small js library to identify philippine mobile networks
 */
 function Phifix(){
 	this.config = {
