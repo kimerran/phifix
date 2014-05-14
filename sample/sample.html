@@ -10,6 +10,20 @@
 	var network = phifix.find('906'); // returns Globe
 	console.log(network);
 
+	// Retrieve supported network IDs
+	var ids = phifix.getNetworkIds();
+	console.log(ids);
+
+	// get prefixes by network ID
+	var prefixes = phifix.getPrefixesByNetworkId('smart');
+	console.log(prefixes);
+
+	// override default naming
+	phifix.setNetworkName('sun', 'SunCellPH');
+
+	var network = phifix.find('922');
+	console.log(network);
+
 
 </script>
 </body>
