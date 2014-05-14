@@ -26,8 +26,8 @@ function Phifix(){
 	this.getPrefixesByNetworkId = function(netid){
 		switch(netid) {
 			case 'sun'	: return this.config.prefixes_sun;		   
-			case 'smart': this.config.network_name_smart = name; break;
-			case 'globe': this.config.network_name_globe = name; break;			    
+			case 'smart': return this.config.prefixes_smart;
+			case 'globe':return this.config.prefixes_globe;			    
 			default: break;	   
 		}		
 	}
