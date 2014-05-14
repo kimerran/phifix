@@ -3,6 +3,11 @@ phifix
 
 small js library to identify philippine mobile networks
 
+
+demo
+====
+check the demo (http://kimerran.github.io/phifix/)
+
 usage
 =====
 
