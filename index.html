@@ -2,23 +2,33 @@
 <html>
 <head>
 	<title></title>
+	<link rel="stylesheet" type="text/css" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
 	<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
 	<script src="src/phifix.js"></script>
 </head>
-<body>
+<body class="jumbotron">
+ 
+  <h1>phifix.js</h1>
+  <div class="container"  style="font-size:69px;">
+  	<span>Enter prefix (no zero):
+  		 <input style="height:150px;width:369px;" id="prefix" type="text"></input>  
+  	</span>
 
-<input id="prefix" type="text"></input>
+	<span class="alert alert-success" id="network_name"></span>  		
+  	
+  </div>
+</div>
 
 
-<span id="network_name">
+	
 
-</span>
 
 <script type="text/javascript">
 	$(function(){
+		$("#network_name").hide();
 		// attach on change
 		$("#prefix").keyup(function(e){
-
+			$("#network_name").show();
 			var network = phifix.find($("#prefix").val());
 
 			if (network==undefined){
